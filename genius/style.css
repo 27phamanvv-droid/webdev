@@ -1,0 +1,123 @@
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0a0a0a;
+    color: #eaeaea;
+}
+
+/* GRID LAYOUT jew jew jew jew jew jew jew jew jew jew jew jew jew jew  jewjewj ew je wje wj */                  
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+/* MAIN CARD */
+.content {
+    grid-column: 2 / 5;
+    background: rgba(20, 20, 20, 0.85);
+    padding: 40px;
+    border-radius: 16px;
+
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.05);
+
+    box-shadow:
+        0 0 40px rgba(0,0,0,0.6),
+        0 0 10px rgba(255,255,255,0.02);
+}
+
+/* HEADER */
+h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* SUBHEADINGS */
+h2 {
+    margin-top: 30px;
+    font-weight: 400;
+    color: #cfcfcf;
+    border-left: 3px solid #888;
+    padding-left: 10px;
+}
+
+/* IMG */
+img {
+    width: 100%;
+    max-width: 220px;
+    display: block;
+    margin: 20px auto;
+
+    border-radius: 12px;
+
+    /* 🔽 CLEAN IMAGE FRAME */
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+}
+
+/* TEXT */
+p {
+    margin-top: 10px;
+    line-height: 1.7;
+    color: #bdbdbd;
+    font-size: 0.95rem;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+
+    background: rgba(255,255,255,0.02);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: rgba(255,255,255,0.05);
+    font-weight: 500;
+}
+
+td {
+    border-top: 1px solid rgba(255,255,255,0.05);
+    color: #ccc;
+}
+
+/* HOVER EFFECT */
+tr:hover {
+    background: rgba(255,255,255,0.03);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .content {
+        grid-column: 1 / 2;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
