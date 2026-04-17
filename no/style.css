@@ -1,0 +1,61 @@
+/* GENERAL PAGE STYLING */
+body {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    background-color: #292944;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+}
+
+/* MEDIA SECTIONS */
+.media-section {
+    background-color: #2f2f4f;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #444;
+    border-radius: 10px;
+}
+
+/* IMAGE */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* VIDEO & IFRAME */
+video, iframe {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+/* AUDIO */
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #292944;
+    margin-top: 20px;
+}
